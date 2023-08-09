@@ -1,4 +1,14 @@
-.h-color{
+.headings{
+    text-align: center;
     color:aqua; 
     
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+
 }
