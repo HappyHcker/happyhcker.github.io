@@ -5,28 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>JCS Feedback</title>
         <link rel="stylesheet" href="style2.css">
-
-
-
-
-
-
-
     </head>
     <body>
+        <section class="main">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Send Feedback</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                
+                <input type="email" id="email" placeholder="Email id" required>
+                
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                
+                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
 
-    <section class="main">
 
-
-
-    </section>
-
-
-
-
-
+        </section>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "happyhackertery@gmail.com",
+                    Password : "ChristHackCat123!",
+                    To : 'happyhackertery@gmail.com',
+                    From : documnet.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
     </body>
-
-
-
 </html>
