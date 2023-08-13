@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style2.css">
     </head>
     <body>
-        <section class="main">
+        <div class="main">
             <form onsubmit="sendEmail(); reset(); return false;">
                 <h3>Send Feedback</h3>
                 <input type="text" id="name" placeholder="Your Name" required>
@@ -16,24 +16,22 @@
                 
                 <input type="text" id="phone" placeholder="Phone Number" required>
                 
-                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                <textarea name="message" id="message" rows="4" placeholder="How can we help you?"></textarea>
                 
                 <button type="submit">Send</button>
             </form>
 
 
-        </section>
+        </div>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
             function sendEmail(){
                 Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "happyhackertery@gmail.com",
-                    Password : "ChristHackCat123!",
-                    To : 'happyhackertery@gmail.com',
-                    From : documnet.getElementById("email").value,
-                    Subject : "New Contact Form Enquiry",
-                    Body : "And this is the body"
+                    SecureToken: "0beea173-59e6-45f3-8493-b140123bdfcc",
+                    To : 'lalahappyninja@gmail.com',
+                    From : "lalahappyninja@gmail.com",
+                    Subject : "Feedback/Question Enquiry for the JCS website",
+                    Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Phone number:" + document.getElementById("phone").value + "<br> Message: " + document.getElementById("message").value
                 }).then(
                 message => alert(message)
                 );
