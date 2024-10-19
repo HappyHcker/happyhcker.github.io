@@ -1,13 +1,21 @@
-//Alert Popup
+//Allert popup
 window.addEventListener('load', function() {
-    alert("🚨 Breaking News: Dr. Lee is handsome?");
+    alert("🚨 Breaking News: James and Peter Kissed!");
 });
 
-// Functionality for "Read More" buttons
+//Readmore buttons -> function
 const readMoreButtons = document.querySelectorAll('.read-more-btn');
 
 readMoreButtons.forEach(button => {
     button.addEventListener('click', () => {
-        alert("On Maintenance, Please Wait :) ");
+        alert("Full article coming soon! Stay tuned.");
     });
 });
+
+
+//Date Function
+const dateElement = document.getElementById('date');
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const today = new Date().toLocaleDateString('en-US', options);
+
+dateElement.textContent = `Today's Date: ${today}`;
