@@ -1,12 +1,11 @@
 # HappyHcker.github.io
-
 School Feedback Site Html File
 
 
-My Own Project for making a webstie that can support the school
+My Own Project for making a webstie that I can develop myself
+and 
+Provie Fun and Interesting Informations/Experience to People
 
 
 --------------------------------------------------------
-Started: 2023
-End: ?
-2024 Working Again~~
+2024 Working Again soon
