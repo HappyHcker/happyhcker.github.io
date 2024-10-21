@@ -65,6 +65,21 @@ footer {
     width: 100%;
 }
 
+button.playSound {
+    cursor: pointer;
+    background-color:chartreuse;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+button.playSound:hover {
+    background-color:#fff200;
+}
+
 button.read-more-btn {
     background-color: #fff200;
     color: rgb(4, 4, 4);

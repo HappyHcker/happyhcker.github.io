@@ -19,3 +19,9 @@ const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const today = new Date().toLocaleDateString('en-US', options);
 
 dateElement.textContent = `Today's Date: ${today}`;
+
+//Sound Function
+document.getElementById("playSound").addEventListener("click", function() {
+    var sound = document.getElementById("weirdsound");
+    sound.play();
+});
